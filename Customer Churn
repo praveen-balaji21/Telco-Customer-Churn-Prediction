@@ -1,0 +1,31 @@
+----Convert TotalCharges to Numeric------
+
+df["TotalCharges"] = pd.to_numeric(
+    df["TotalCharges"],
+    errors="coerce"
+)
+
+
+---Fill Missing Values----
+
+df["TotalCharges"].fillna(df["TotalCharges"].median(), inplace=True)
+
+
+Exploratory Data Analysis:
+
+Target Variable Distribution:
+
+sns.countplot(x="Churn", data=df)
+plt.title("Customer Churn Distribution")
+plt.show()
+
+Churn by Contract Type:
+
+sns.countplot(x="Contract", hue="Churn", data=df)
+plt.xticks(rotation=15)
+plt.show()
+
+Monthly Charges Distribution:
+
+sns.histplot(data=df, x="MonthlyCharges", hue="Churn", kde=True)
+plt.show()
