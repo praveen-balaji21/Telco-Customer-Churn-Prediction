@@ -1,0 +1,14 @@
+-------Load the Dataset-------
+
+df = pd.read_csv("Telco-Customer-Churn.csv")
+
+
+----Inspect the Data-------
+
+df.head()
+df.tail()
+df.info()
+df.describe()
+df.shape
+df.describe(include="all")
+df.isnull().sum()
