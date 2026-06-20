@@ -36,3 +36,18 @@ Matplotlib
 Seaborn
 Scikit-learn
 Jupyter Notebook
+
+
+🚀 Workflow
+Load and inspect the dataset
+Clean and preprocess the data
+Perform exploratory data analysis
+Encode categorical variables
+Split the data into training and testing sets
+Train the machine learning model
+Evaluate model performance
+Analyze feature importance
+
+
+🤖 Model Used
+Random Forest Classifier
